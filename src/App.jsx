@@ -1,9 +1,22 @@
+import axios from 'axios';
 
 const App = () => {
+
+  const posty = () => {
+    axios.post('/post', {name: 'Trevor'})
+    .then((response) => {
+      console.log(response)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+  }
 
   return (
     <div className="App">
     Hello World
+    <button onClick={posty}>Post Button</button>
+    <button>Get Button</button>
     </div>
   )
 }
