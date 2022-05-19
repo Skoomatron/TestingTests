@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../../dist')));
 app.use('/', router);
 
-const PORT = 3001;
+const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(`We in this port ${PORT} !`)
