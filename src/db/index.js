@@ -8,10 +8,6 @@ mongoose.connect(mongooseURL, {
 
 const db = mongoose.connection;
 
-// db.once('connected', () => {
-//   console.log('MONGO HUNGRY!!');
-// });
-
 const dbTest = async () => {
 
   await mongoose.connection.close()
